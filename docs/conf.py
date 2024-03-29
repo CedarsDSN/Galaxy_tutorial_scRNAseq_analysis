@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Galaxy tutorial RNA-seq single end analysis'
+project = 'Galaxy tutorial Single-cell RNA-seq analysis'
 copyright = '2023, Cedars-DSN'
 author = 'Cedars-DSN'
 release = '0.1'
