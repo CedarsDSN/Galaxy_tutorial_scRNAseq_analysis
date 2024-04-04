@@ -24,4 +24,6 @@ This is the list of steps that one would require to run the “Single-cell RNA-s
   b. Under Sample 1 Read 2, select the R2 file from Sample 1
   c. Under Sample 2 Read 1, select the R1 file from Sample 2
   d. Under Sample 2 Read 2, select the R2 file from Sample 2
+12. The default reference genome in this workflow is the mouse genome. To select from a list of reference genomes, click on the Edit button next to "Select reference genome" and choose the reference genome of your choice from the drop-down list
+13. For the "RNA STARsolo" tool, all the arguments are default
 
