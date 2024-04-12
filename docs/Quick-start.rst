@@ -1,7 +1,7 @@
 Quick-start
 ============
 
-Primary analysis workflow (includes Primary and Secondary analysis)
+**Primary analysis workflow (includes Primary and Secondary analysis)**
 
 This is the list of steps that one would require to run the “Single-cell RNA-seq Primary analysis” workflow without getting into too much detail about each step. To understand each step in-depth, please proceed to the next page.
 
@@ -27,4 +27,11 @@ This is the list of steps that one would require to run the “Single-cell RNA-s
 16. For the multiQC report, the user doesn't need to enter any arguments
 17. The following tool is "Scater: Calculate QC metrics" where the filtered dataset is redirected. It creates a SingleCellLoomExperiment dataset, which can be redirected to the next tool, "Scater: plot library QC"
 18. The tool "Scater: plot library QC" plots the QC metrics for the data. The tool is set to not plot on a log scale, but you can modify that according to what you would like
+
+
+**Tertiary analysis workflow (includes Tertiary analysis)**
+
+1. For the "Single-cell RNA-seq tertiary analysis" workflow, you would either run it after the Primary Analysis workflow (please refer to `this <https://galaxy-tutorial.readthedocs.io/en/latest/Tertiary%20analysis/Importing%20data/Importing%20count%20data%20from%20Primary%20Analysis.html>`_ page) or run it on your own dataset (please refer to `this <https://galaxy-tutorial.readthedocs.io/en/latest/Tertiary%20analysis/Importing%20data/Importing%20example%20data%20for%20running%20Tertiary%20Analysis.html>`_ page)
+2. Navigate to the workflows tab, and select the Run button for the “Single-cell RNA-seq tertiary Analysis” workflow to open the workflow and choose datasets
+3. If you have your own tabular dataset, you can upload your tabular matrix to the current history. If you ran the “Single-cell RNA-seq Primary analysis”, you can download it from a previous history and move it to the current history using these instructions
 
