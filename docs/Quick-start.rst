@@ -19,11 +19,12 @@ This is the list of steps that one would require to run the “Single-cell RNA-s
 8. Next to the workflow named "Single-cell RNA-seq Primary analysis", click on the start button
 9. This will navigate you to the page to enter all the values to run this workflow. Here, you can either send all the output to the current history or make a new history
 10. Another file that you will need is the whitelist of known cell barcodes, which are extracted from the CellRanger pipeline. This file is provided to you under the data library in Galaxy. Please download it and upload it under History. Instructions to access the data library can be found `here <https://galaxy-tutorial-rnaseq-single-end.readthedocs.io/en/latest/Supplementary%20files/Obtaining%20files%20from%20Data%20Libraries.html>`_
-11. Currently, the workflow is set up to take files from 2 samples. For selecting samples -
-  a. Under Sample 1 Read 1, select the R1 file from Sample 1
-  b. Under Sample 1 Read 2, select the R2 file from Sample 1
-  c. Under Sample 2 Read 1, select the R1 file from Sample 2
-  d. Under Sample 2 Read 2, select the R2 file from Sample 2
-12. The default reference genome in this workflow is the mouse genome. To select from a list of reference genomes, click on the Edit button next to "Select reference genome" and choose the reference genome of your choice from the drop-down list
-13. For the "RNA STARsolo" tool, all the arguments are default
+11. Currently, the workflow is set up to take a collection of paired samples - R1 and R2. To create a paired collection using your samples, use this set of instructions. Once you upload and create your samples, create a paired collection that will show up in your history. Select this collection under "Input dataset collection"
+12. Under "Cell Barcode file", select the previously uploaded whitelist of known cell barcodes from the history
+13. Under "Demultiplexing and Quantification", the tool being used is RNA STARsolo. The default reference genome in our workflow is the mouse genome. To select from a list of reference genomes, click on the Edit button next to "Select reference genome" and choose the reference genome of your choice from the drop-down list
+14. All the arguments are set to default for the "RNA STARsolo" tool. You can change the parameters for any of the arguments using the edit button
+15. The following tool is "DropletUtils" which helps filter the RNA STARsolo output using various filtering parameters. Under DropletUtils, there is default filtering applied. If you would like to change these filters, please use the edit button next to the filter you are interested in and modify it
+16. For the multiQC report, the user doesn't need to enter any arguments
+17. The following tool is "Scater: Calculate QC metrics" where the filtered dataset is redirected. It creates a SingleCellLoomExperiment dataset, which can be redirected to the next tool, "Scater: plot library QC"
+18. The tool "Scater: plot library QC" plots the QC metrics for the data. The tool is set to not plot on a log scale, but you can modify that according to what you would like
 
