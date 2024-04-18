@@ -32,7 +32,9 @@ This is the list of steps that one would require to run the “Single-cell RNA-s
 
 **Tertiary analysis workflow (includes Tertiary analysis)**
 
-1. For the "Single-cell RNA-seq tertiary analysis" workflow, you would either run it after the Primary Analysis workflow and use the Loom dataset (please refer to `this <https://galaxy-tutorial.readthedocs.io/en/latest/Tertiary%20analysis/Importing%20data/Importing%20count%20data%20from%20Primary%20Analysis.html>`_ page) or run it on your own dataset (please refer to `this <https://galaxy-tutorial.readthedocs.io/en/latest/Tertiary%20analysis/Importing%20data/Importing%20example%20data%20for%20running%20Tertiary%20Analysis.html>`_ page)
-2. Navigate to the workflows tab, and select the Run button for the “Single-cell RNA-seq tertiary Analysis” workflow to open the workflow and choose the dataset that you would like to use
-3. 
+1. For the "Single-cell RNA-seq tertiary analysis" workflow, you would either run it after the Primary Analysis workflow and use the Loom dataset (please refer to `this <https://galaxy-tutorial.readthedocs.io/en/latest/Tertiary%20analysis/Importing%20data/Importing%20count%20data%20from%20Primary%20Analysis.html>`_ page) or run it on your dataset (please refer to `this <https://galaxy-tutorial.readthedocs.io/en/latest/Tertiary%20analysis/Importing%20data/Importing%20example%20data%20for%20running%20Tertiary%20Analysis.html>`_ page)
+2. Navigate to the workflows tab and select the Run button for the “Single-cell RNA-seq tertiary Analysis” workflow to open the workflow and choose the dataset that you would like to use
+3. If you have completed the “Single-cell RNA-seq Primary analysis” workflow, you now have the filters you want to implement for the "Single-cell RNA-seq tertiary analysis" workflow. Examine the plots from the primary analysis workflow and decide the filtering parameters you wish to use for the tertiary analysis. This part is essential to carry out the QC part of the single-cell RNA-seq analysis
+4. There are three filters to be used when carrying out QC in single-cell RNA-seq analysis - UMI, features, and percent of mitochondrial counts. You can also filter depending on the number of cells. Default filtering is applied for each.
+5. The 
 
