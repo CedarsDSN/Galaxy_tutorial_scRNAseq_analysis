@@ -15,3 +15,4 @@ Contents
 
    Single-cell RNA-seq introduction
    Quick-start
+   Primary analysis/index.rst
