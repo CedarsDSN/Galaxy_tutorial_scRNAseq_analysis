@@ -8,7 +8,15 @@ For single-cell RNA-seq analysis, Primary analysis is the first crucial step in 
 * R2 typically has the actual cDNA sequences
 * I1 is typically from an illumina sequencer and will contain the Illumina lane information
 
-Demultiplexing is a crucial initial step in the processing of next-generation sequencing (NGS) data, especially when samples are multiplexed during sequencing. Multiplexing allows multiple samples to be sequenced simultaneously in a single sequencing run by tagging each DNA or RNA fragment from different samples with unique sequence tags known as barcodes or indices. Demultiplexing is the process of sorting these mixed reads back into their original sample groups based on these barcodes, effectively identifying and separating sequences that belong to different samples. The most common tool that is used for demultiplexing is Illumina's bcl2fastq. Demultiplexing is an essential step in ensuring that sequencing data is properly organized and attributed to the correct samples for accurate analysis in any multi-sample sequencing experiment. Once demultiplexing is done, the next step is conducting the alignment and quantification to get a count matrix. 
+Demultiplexing is a crucial initial step in the processing of next-generation sequencing (NGS) data, especially when samples are multiplexed during sequencing. Multiplexing allows multiple samples to be sequenced simultaneously in a single sequencing run by tagging each DNA or RNA fragment from different samples with unique sequence tags known as barcodes or indices. Demultiplexing is the process of sorting these mixed reads back into their original sample groups based on these barcodes, effectively identifying and separating sequences that belong to different samples. The most common tool that is used for demultiplexing is Illumina's bcl2fastq. Demultiplexing is an essential step in ensuring that sequencing data is appropriately organized and attributed to the correct samples for accurate analysis in any multi-sample sequencing experiment. Once demultiplexing is done, the next step is conducting the alignment and quantification to get a count matrix. 
 
-We use the "RNA STARsolo" tool for our workflow to carry out demultiplexing and quantification. Before conducting this, we need to conduct quality control of the fastq files. 
+We use the "RNA STARsolo" tool for our workflow to carry out demultiplexing and quantification. Before conducting this, we need to conduct quality control of the fastq files. Before that, the files have to be imported. If you want to run this workflow but do not have your own data, you could also use the example dataset and run it. The following pages have instructions for both of these topics. 
+
+Below are the links for importing data, using example data, and performing quality control of your data -
+
+.. toctree::
+
+   Using example data
+   Importing data
+   Quality check
 
