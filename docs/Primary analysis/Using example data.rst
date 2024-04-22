@@ -17,3 +17,5 @@ Example data can be used to run this workflow. The original tutorial has provide
   https://zenodo.org/record/3457880/files/subset_pbmc_1k_v3_S1_L002_R2_001.fastq.gz
 
 * The files should start uploading. One more way is to download the files to your computer from the site and upload them to Filezilla and use FTP to transfer these files. Instructions are `here <https://galaxy-tutorial-landing-page.readthedocs.io/en/latest/Miscellaneous/Importing%20large%20data.html>`_
+
+* You are now ready to use your fastq files. The next step so as to make it workflow ready is to create a collection of fastq files. Please refer to these `instructions <https://galaxy-tutorial.readthedocs.io/en/latest/Primary%20analysis/Importing%20data.html>`_ to create a collection of your files.
