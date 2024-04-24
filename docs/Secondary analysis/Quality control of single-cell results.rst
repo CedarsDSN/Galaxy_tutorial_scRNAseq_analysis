@@ -24,7 +24,7 @@ Once alignment is done, the tools "DropletUtils", "Scater: Calculate QC metrics"
 
 **For users that are running the workflow** -
 
-* You don't have to enter any values here
+* You don't have to enter any values here. You can move on to the next step which is the Quality control step.
 
 **For users that are running each step** -
 
@@ -33,6 +33,18 @@ Once alignment is done, the tools "DropletUtils", "Scater: Calculate QC metrics"
 * For the following tool, "Scater: Calculate QC metrics", provide the output from the "DropletUtils" tool. Click "Execute"
 
 * The tool "SCEasy Converter" - select "Loom to AnnData" and provide the loom output data from the "Scater: Calculate QC metrics" tool
+
+**Quality filter thresholding**
+
+We have three plots that could help in filtering your single-cell RNA-seq dataset
+
+* Violin plot of total_counts - A violin plot of the distribution of UMIs versus the sample name
+
+* Violin plot of n_genes_by_counts - A violin plot of the distribution of the number of genes versus the sample name
+
+* Violin plot of pct_counts_mito - A violin plot of the number of genes versus the sample name
+
+
 
 
 
