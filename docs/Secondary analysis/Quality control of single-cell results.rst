@@ -18,7 +18,9 @@ Some metrics are specific to Scanpy. The ones that you would be using to underst
 
 * log1p_total_counts: the logarithmic value of the value total_counts
 
-* n_cells: 
+* n_cells: the count of number of cells a particular gene appears in
+
+Once alignment is done, the tools DropletUtils and 
 
 
 
