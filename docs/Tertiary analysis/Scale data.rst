@@ -7,3 +7,14 @@ In our workflow, we use the tool "Scanpy ScaleData" to scale the data.
 
 **For users running the workflow** -
 
+* In the workflow, you don’t need to enter any values. All values are default. Use the edit button next to the parameter you would like to change. You are ready to move on to the next step
+
+**For users running each step** -
+
+* Open the tool “Scanpy ScaleData”
+
+* Under "Truncate to this value after scaling", enter 10.0
+
+* All other parameters are default
+
+* Click on “Execute”
