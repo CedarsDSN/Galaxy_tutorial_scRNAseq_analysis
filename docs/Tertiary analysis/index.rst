@@ -9,3 +9,6 @@ Clustering algorithms are employed to partition cells into groups based on their
 
 Differential expression analysis is used to identify genes that are differentially expressed between cell clusters or experimental conditions, providing insights into the molecular signatures associated with specific cell types or states. Statistical methods such as the Wilcoxon rank-sum test or likelihood ratio test are commonly used to assess differential expression while accounting for technical variability and multiple testing. Genes that are significantly upregulated or downregulated in specific clusters can serve as candidate markers for characterizing cell types or elucidating biological processes.
 
+.. toctree::
+
+   
