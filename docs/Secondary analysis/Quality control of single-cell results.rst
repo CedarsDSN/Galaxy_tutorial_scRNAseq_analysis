@@ -18,9 +18,9 @@ Some metrics are specific to Scanpy. The ones that you would be using to underst
 
 * log1p_total_counts: the logarithmic value of the value total_counts
 
-* n_cells: the count of number of cells a particular gene appears in
+* n_cells: the count of the number of cells a particular gene appears in
 
-Once alignment is done, the tools DropletUtils and 
+Once alignment is done, the tools DropletUtils, Scater: Calculate QC metrics and SCEasy Converter are used to convert data from RNA STARsolo tsv format to Loo
 
 
 
