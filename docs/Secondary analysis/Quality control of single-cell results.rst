@@ -12,7 +12,13 @@ The important metrics that you will encounter in any single-cell RNA-seq analysi
 
 * mito.percent (Seurat) or pct_counts_mt (Scanpy): Percentage of cell reads originating from the mitochondrial genes
 
-Some metrics are specific to Scanpy. The 
+Some metrics are specific to Scanpy. The ones that you would be using to understand and filter your data are -
+
+* log1p_genes_by_counts: the logarithmic value of the value n_genes_by_counts
+
+* log1p_total_counts: the logarithmic value of the value total_counts
+
+* n_cells: 
 
 
 
