@@ -17,3 +17,4 @@ Contents
    Quick-start
    Primary analysis/index.rst
    Secondary analysis/index.rst
+   Tertiary analysis/index.rst
