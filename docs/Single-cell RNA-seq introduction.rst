@@ -21,7 +21,8 @@ This tutorial goes through the steps of single-cell RNA-Seq analysis mentioned b
       * Normalize data
       * Find variable genes
       * Scale data
-      * Run PCA, Build a neighborhood graph, UMAP, tSNE
+      * Run PCA and Build a neighborhood graph
+      * Run UMAP and tSNE
       * Find clusters
       * Find markers
       * Plot PCA, UMAP and tSNE
