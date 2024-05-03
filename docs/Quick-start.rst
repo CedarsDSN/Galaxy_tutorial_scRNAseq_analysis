@@ -36,7 +36,9 @@ This is the list of steps that one would require to run the “Single-cell RNA-s
 2. Navigate to the workflows tab and select the Run button for the “Single-cell RNA-seq tertiary Analysis” workflow to open the workflow and choose the dataset you want to use. This workflow uses an object called AnnData object, which is a scRNA-seq data format. If you have a tsv format, please refer to this set of instructions
 3. If you have completed the “Single-cell RNA-seq Primary analysis” workflow, you now have the filters you want to implement for the "Single-cell RNA-seq tertiary analysis" workflow. Examine the plots from the primary analysis workflow and decide the filtering parameters you wish to use for the tertiary analysis. This part is essential to carry out the QC part of the single-cell RNA-seq analysis
 4. There are three filters to be used when carrying out QC in single-cell RNA-seq analysis - UMI, features, and percent of mitochondrial counts. You can also filter depending on the number of cells. Default filtering is applied for each.
-5. The next steps in this workflow are part of the standardized single-cell RNA-seq analysis workflow. For detailed steps, use the instructions under Tertiary analysis below
-6. All other parameters in the workflow are default. Please change it using the Edit button next to the parameter.
-7. Once all entries are put in, scroll to the top and click the "Run Workflow" button to run the workflow
+5. Under “Scanpy RunPCA” tool, the default number of PCs to produce is 50. If you want to increase this number, use the edit button next to “Number of PCs to produce” and modify it to the number you choose
+6. Under “ScanPy ComputeGraph” tool, the default value for “Maximum number of neighbors used” is 15 and the default “Number of PCs to use” is 50. Both of these numbers can be changed by using the edit button and modifying it to a number of your choice
+7. The next steps in this workflow are part of the standardized single-cell RNA-seq analysis workflow. For detailed steps, use the instructions under Tertiary analysis below
+8. All other parameters in the workflow are default. Please change it using the Edit button next to the parameter.
+9. Once all entries are put in, scroll to the top and click the "Run Workflow" button to run the workflow
 
