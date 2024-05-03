@@ -27,3 +27,4 @@ This tutorial goes through the steps of single-cell RNA-Seq analysis mentioned b
       * Find markers
       * Plot PCA, UMAP and tSNE
       * Annotate gene names in cluster file
+  - Conclusion
