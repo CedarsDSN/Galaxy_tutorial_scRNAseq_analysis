@@ -32,3 +32,8 @@ HTML file can be viewed after downloading it from the history. Below are all the
 * Various plots showing per sequence quality scores, per base sequence content, per sequence GC content, per base N content, sequence duplication levels, and adapter content. One of the plots below shows the per-base sequence quality
 
 * If you would like more information on interpreting each of the plots and statistics in the FastQC output, `this <https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/qc_fastqc_assessment.html>`_ is an excellent place to start. Scroll down to the "Analysis quality metrics" to look at the interpretation of each plot.
+
+.. figure:: /images/fastqc_sequence_quality.png
+   :alt: fastqc plot
+   
+   Figure showing the per base sequence quality of a sample in the FastQC HTML report
