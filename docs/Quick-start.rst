@@ -37,8 +37,10 @@ This is the list of steps that one would require to run the “Single-cell RNA-s
 3. If you have completed the “Single-cell RNA-seq Primary analysis” workflow, you now have the filters you want to implement for the "Single-cell RNA-seq tertiary analysis" workflow. Examine the plots from the primary analysis workflow and decide the filtering parameters you wish to use for the tertiary analysis. This part is essential to carry out the QC part of the single-cell RNA-seq analysis
 4. There are three filters to be used when carrying out QC in single-cell RNA-seq analysis - UMI, features, and percent of mitochondrial counts. You can also filter depending on the number of cells. Default filtering is applied for each.
 5. Under “Scanpy RunPCA” tool, the default number of PCs to produce is 50. If you want to increase this number, use the edit button next to “Number of PCs to produce” and modify it to the number you choose
-6. Under “ScanPy ComputeGraph” tool, the default value for “Maximum number of neighbors used” is 15 and the default “Number of PCs to use” is 50. Both of these numbers can be changed by using the edit button and modifying it to a number of your choice
+6. Under “Scanpy ComputeGraph” tool, the default value for “Maximum number of neighbors used” is 15 and the default “Number of PCs to use” is 50. Both of these numbers can be changed by using the edit button and modifying it to a number of your choice
 7. The next steps in this workflow are part of the standardized single-cell RNA-seq analysis workflow. For detailed steps, use the instructions under Tertiary analysis below
-8. All other parameters in the workflow are default. Please change it using the Edit button next to the parameter.
-9. Once all entries are put in, scroll to the top and click the "Run Workflow" button to run the workflow
+8. Under "Scanpy FindClusters", for the argument “Resolution, high value for more and smaller clusters”, the default value is 0.6 and you can change the value using the edit button next to the parameter
+9. Under the "ScanPy FindMarkers” tool, you can change arguments such as “The sample grouping/clustering to use” from Louvain to Leiden, and also, the “Number of top genes to show per cluster” can be altered. The default is 50
+10. All other arguments in the workflow are default. Please change it using the Edit button next to the parameter.
+11. Once all entries are put in, scroll to the top and click the "Run Workflow" button to run the workflow
 
