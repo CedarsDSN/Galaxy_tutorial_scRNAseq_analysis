@@ -1,5 +1,5 @@
-Single-cell RNA-seq introduction
-================================
+**Single-cell RNA-seq introduction**
+====================================
 
 Single-cell RNA-seq analysis is a swiftly advancing field at the forefront of transcriptomic research. It's widely used in studies focused on developmental processes and rare transcripts, allowing researchers to explore the diversity of cells within a population with unprecedented detail. This method offers a unique combination of cellular resolution and genome-wide coverage, enabling the discovery of new previously inaccessible insights using traditional bulk RNA-seq techniques.
 
