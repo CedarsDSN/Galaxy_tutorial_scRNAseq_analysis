@@ -1,2 +1,4 @@
 **Conclusion**
 ===============
+
+Congratulations on completing the single-cell RNA-seq analysis tutorial! Running a single-cell RNA-seq analysis workflow includes many steps and every step needs to be understood to extract the most out of your data. One important thing about this analysis is to understand that it's not a "plug-and-play" kind of pipeline. Before you start, it is good to have an idea of the cell populations and marker genes that you are interested in. One of the biggest problems in analyzing scRNA-seq is the lack of a clearly defined pathway or parameters. You have to keep trying different parameters and thresholds and play around with the clustering resolution to adapt it to what you are interested in. It would also serve well to run each step separately so you know what each output looks like. 
