@@ -1,5 +1,5 @@
-Quick-start
-============
+**Quick-start**
+================
 
 **Primary analysis workflow (includes Primary and Secondary analysis)**
 
