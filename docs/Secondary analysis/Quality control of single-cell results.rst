@@ -38,12 +38,20 @@ Once alignment is done, the tools "DropletUtils", "Scater: Calculate QC metrics"
 
 We have three plots that could help in filtering your single-cell RNA-seq dataset
 
-* Violin plot of total_counts - A violin plot of the distribution of UMIs versus the sample name
+* Violin plot of total_counts - A violin plot of the distribution of UMIs versus the sample name / condition
 
-* Violin plot of n_genes_by_counts - A violin plot of the distribution of the number of genes versus the sample name
+* Violin plot of n_genes_by_counts - A violin plot of the distribution of the number of genes versus the sample name / condition 
 
-* Violin plot of pct_counts_mito - A violin plot of the number of genes versus the sample name
+* Violin plot of pct_counts_mito - A violin plot of the number of genes versus the sample name / condition
 
+To get an idea of how these plots look like, here are the three plots below for some example data -
+
+.. figure:: /images/featurecounts.png
+   :width: 500
+   :height: 800
+   :alt: featureCounts output
+   
+   The successful run of featureCounts can be assessed within Galaxy by looking for the information button of your job
 
 
 
