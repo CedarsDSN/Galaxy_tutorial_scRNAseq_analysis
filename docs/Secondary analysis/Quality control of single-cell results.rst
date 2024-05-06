@@ -49,9 +49,9 @@ To get an idea of how these plots look like, here are the three plots below for 
 .. figure:: /images/plots_before_filtering.png
    :width:1000
    :height: 400
-   :alt: QC plots output
+   :alt: QC output
    
-   The three plots that will help you decide the thresholds for conducting Quality check on your Single-cell RNAseq data
+   The three plots will help you decide the thresholds for conducting a Quality check on your Single-cell RNAseq data
 
 
 
