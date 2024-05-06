@@ -50,7 +50,6 @@ To get an idea of how these plots look like, here are the three plots below for 
    :width:1000
    :height: 400
    :alt: QC output
-   
    The three plots will help you decide the thresholds for conducting a Quality check on your Single-cell RNAseq data
 
 
