@@ -37,3 +37,8 @@ The second step is to compute the KNN graph using the "ScanyPy ComputeGraph" too
    :alt: Principal components
    
    The elbow plot here, with principal components on the X-axis and Standard deviation on the Y-axis helps choose a principal component to choose for the next steps, namely clustering
+
+.. note::
+
+  To help interpret this plots, let's look at the plot above. Here, the elbow plot starts plateauing at 20/21. So, we can obtain most information until principal component 20 or 21. For further steps, especially in the clustering step - Please look at your PC plot and change the "Number of PCs to use" using your interpretation of your plot. The default is set at 50 so you may have to run the workflow again by changing this value.
+
