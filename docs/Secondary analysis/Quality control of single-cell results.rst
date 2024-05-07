@@ -65,7 +65,7 @@ To get an idea of how these plots look like, here are the three plots below for 
    :height: 200
    :alt: QC output
    
-   The log1p_n_genes_by_counts versus sample name/condition plot can help decide the threshold for percentage of mitochondrial counts/cell
+   The log1p_n_genes_by_counts versus sample name/condition plot can help decide the threshold for the percentage of mitochondrial counts/cell
 
 
 
