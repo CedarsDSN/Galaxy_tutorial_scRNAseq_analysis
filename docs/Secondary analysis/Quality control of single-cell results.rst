@@ -53,6 +53,20 @@ To get an idea of how these plots look like, here are the three plots below for 
    
    QC plots help decide the threshold to set for your data
 
+.. figure:: /images/QC2.png
+   :width: 300
+   :height: 200
+   :alt: QC output
+   
+   QC plots help decide the threshold to set for your data
+
+.. figure:: /images/QC3.png
+   :width: 300
+   :height: 200
+   :alt: QC output
+   
+   QC plots help decide the threshold to set for your data
+
 
 
 
