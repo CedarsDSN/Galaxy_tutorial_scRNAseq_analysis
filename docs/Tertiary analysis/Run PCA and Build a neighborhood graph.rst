@@ -31,4 +31,9 @@ The second step is to compute the KNN graph using the "ScanyPy ComputeGraph" too
 
 * Click on "Execute"
 
-
+.. figure:: /images/PC_interpretation.png
+   :width: 300
+   :height: 200
+   :alt: Principal components
+   
+   The elbow plot here, with principal components on the X-axis and Standard deviation on the Y-axis helps choose a principal component to choose for the next steps, namely clustering
