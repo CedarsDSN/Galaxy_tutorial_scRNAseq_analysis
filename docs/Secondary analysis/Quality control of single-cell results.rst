@@ -46,9 +46,9 @@ We have three plots that could help in filtering your single-cell RNA-seq datase
 
 To get an idea of how these plots look like, here are the three plots below for some example data -
 
-.. figure:: /images/plots_before_filtering.png
-   :width: 800
-   :height: 300
+.. figure:: /images/QC1.png
+   :width: 300
+   :height: 200
    :alt: QC output
    
    QC plots help decide the threshold to set for your data
