@@ -40,5 +40,5 @@ The second step is to compute the KNN graph using the "ScanyPy ComputeGraph" too
 
 .. note::
 
-  To help interpret this plots, let's look at the plot above. Here, the elbow plot starts plateauing at 20/21. So, we can obtain most information until principal component 20 or 21. For further steps, especially in the clustering step - Please look at your PC plot and change the "Number of PCs to use" using your interpretation of your plot. The default is set at 50 so you may have to run the workflow again by changing this value.
+  To help interpret this plots, let's look at the plot above. Here, the elbow plot starts plateauing at 20/21. So, we can obtain most information until principal component 20 or 21. For further steps, especially in the clustering step - Please look at your PC plot and change the "Number of PCs to use" under "ScanPy ComputeGraph" using your interpretation of your plot. The default is set to 20, so you may have to run the workflow again by changing this value.
 
