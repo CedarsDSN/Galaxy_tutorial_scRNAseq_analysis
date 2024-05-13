@@ -66,7 +66,7 @@ Since PCA cannot capture the complexity of the data, it would be better to look 
 .. figure:: /images/tSNE.png
    :width: 500
    :height: 400
-   :alt: Principal components
+   :alt: tSNE
    
    The tSNE plot above shows the 7 clusters that are obtained
 
@@ -74,9 +74,13 @@ Since PCA cannot capture the complexity of the data, it would be better to look 
 .. figure:: /images/umap.png
    :width: 500
    :height: 400
-   :alt: Principal components
+   :alt: UMAP
    
-   The tSNE plot above shows the 7 clusters that are obtained
+   The UMAP plot above shows the 7 clusters that are obtained
+
+The UMAP or tSNE plot can also be used to study batch effects in your data. For example, in the UMAP plot, you can see that the 
+
+
 
 
 
