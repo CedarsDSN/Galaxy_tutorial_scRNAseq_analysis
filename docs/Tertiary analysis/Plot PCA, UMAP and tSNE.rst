@@ -63,7 +63,7 @@ Your PCA, tSNE, and UMAP plots are ready to be viewed. These plots reduce the di
 Since PCA cannot capture the complexity of the data, it would be better to look at the UMAP and tSNE plots
 
 
-.. figure:: /images/tSNE_clustering.png
+.. figure:: /images/tSNE.png
    :width: 500
    :height: 400
    :alt: Principal components
@@ -71,7 +71,7 @@ Since PCA cannot capture the complexity of the data, it would be better to look 
    The tSNE plot above shows the 7 clusters that are obtained
 
 
-.. figure:: /images/umap_clustering.png
+.. figure:: /images/umap.png
    :width: 500
    :height: 400
    :alt: Principal components
