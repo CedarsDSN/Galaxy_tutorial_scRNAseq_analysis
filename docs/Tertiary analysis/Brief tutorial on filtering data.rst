@@ -15,9 +15,9 @@ nMitopercent indicates the proportion of total RNA transcripts derived from mito
 **Combining Metrics for Effective QC**
 Together, these metrics provide a comprehensive view of cell quality. Researchers can effectively filter out poor-quality cells by analyzing and applying appropriate thresholds for nUMI, nCounts, and nMitopercent, leading to a more reliable and accurate scRNA-seq dataset. Visual tools, such as scatter plots and violin plots, are often used to visualize these metrics and assist in setting appropriate cutoffs for filtering. This rigorous QC process is crucial for ensuring the validity of downstream analyses and obtaining meaningful biological insights.
 
-In our workflow, we can look at the scatter plots from the primary workflow and use that to determine thresholds for the three metrics above. 
+In our workflow, we can look at the scatter plots from the primary workflow and use that to determine thresholds for the three metrics above. You can open the workflow "Single cell RNA-seq tertiary analysis" and go through this tutorial and change values depending on your data.
 
-First, it would be better to interpret the scatter plots from the primary workflow and then use that to demonstrate what thresholds will be chosen to filter the data. Look at the scatter plot under "Scatter - mito x genes". This is plotting the nFeature_RNA against nMitopercent (The notation is a bit different. log1p_n_genes_by_counts is nFeature_RNA and pct_counts_mito is nMitopercent). You can also use a violin plot to determine a threshold, but scatter plots are helpful. Below is an example of such a scatter plot.
+First, it would be better to interpret the scatter plots from the primary workflow and then use that to demonstrate what thresholds will be chosen to filter the data. Look at the scatter plot under "Plot - mito x genes". This is plotting the nFeature_RNA against nMitopercent (The notation is a bit different. log1p_n_genes_by_counts is nFeature_RNA and pct_counts_mito is nMitopercent). You can also use a violin plot to determine a threshold, but scatter plots are helpful. Below is an example of such a scatter plot.
 
 .. figure:: /images/scatter_mito_genes.png
    :width: 400
@@ -35,4 +35,43 @@ The above plot shows how cells with log1p_n_genes_by_count (nFeature_RNA) up to 
    
    Fig 2: Raw data vs the first filter - genes/cell
 
-Now, we can move to the next metric. Look at the scatter 
+Now, we can move to the next metric. Look at the scatter plot under "Plot - mito x UMIs". This is plotting nCount_RNA against nMitopercent (In the plot, nCount_RNA is log1p_total_counts). 
+
+.. figure:: /images/scatter_mito_UMIs.png
+   :width: 400
+   :height: 400
+   :alt: UMAP
+   
+   Fig 3: Scatter - mito x UMIs
+
+The above plot shows how cells with log1p_total_counts up to 6.3-6.4 often have high pct_counts_mito. We can set 6.3 as a lower limit when filtering. Let's keep the max value as 20.0. In the tertiary workflow, under the "Filtering by Counts," the default value is 6.3 for "Min value" and 20.0 for "Max value." You should check your scatter plot and interpret it to obtain a threshold for your data. After filtering, we can look at violin plots comparing the data after the first filter data and after applying this filter as well.
+
+.. figure:: /images/first_filter_vs_second_filter.png
+   :width: 400
+   :height: 400
+   :alt: UMAP
+   
+   Fig 4: First filter vs the second filter - counts/cell
+
+Moving on to the next metric. Look at the scatter plot under "Plot - mito x UMIs". This is plotting nCount_RNA against nMitopercent.
+
+.. figure:: /images/scatter_mito_UMIs.png
+   :width: 400
+   :height: 400
+   :alt: UMAP
+   
+   Fig 5: Scatter - mito x UMIs
+
+The above plot shows how cells that have around 5% mitochondrial counts or higher also have fewer total counts. While 5% is quite a common cut-off, this is messy data, so let's go for a more strict cut-off of 4.5%. With your data, look at the scatter plot and obtain a threshold to enter into "Min value" under "Filtering by percentage of mitochondrial counts". You can keep "Max value" as 20.0. After filtering, we can look at violin plots comparing the data after the second filter data and after applying this filter.
+
+.. figure:: /images/second_filter_vs_third_filter.png
+   :width: 400
+   :height: 400
+   :alt: UMAP
+   
+   Fig 6: First filter vs the second filter - counts/cell
+
+Now that we have gone into detail about how to run the workflow with the filtering for your data. You are now ready to go through the workflow.
+
+
+
