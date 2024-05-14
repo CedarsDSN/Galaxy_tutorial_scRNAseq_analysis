@@ -78,8 +78,14 @@ Since PCA cannot capture the complexity of the data, it would be better to look 
    
    The UMAP plot above shows the 7 clusters that are obtained
 
-The UMAP or tSNE plot can also be used to study batch effects in your data. For example, in the UMAP plot, you can see that the 
+The UMAP or tSNE plot can also be used to study batch effects in your data. For example, the UMAP plot below shows that the cluster of cells marked consists mainly of N705. We want the clusters should consist of all samples equally distributed. This is called a batch effect. We want to minimize batch effects and not want one sample to be overrepresented in a cluster/cell type. You should examine your UMAP to make sure that there are no batch effects. There are tools like Harmony and Seurat's CCA method that remove batch effects effectively.
 
+.. figure:: /images/batch_effect.png
+   :width: 400
+   :height: 400
+   :alt: UMAP
+   
+   The area marked looks to be mostly comprised of N705
 
 
 
