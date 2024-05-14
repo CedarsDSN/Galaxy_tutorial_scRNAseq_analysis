@@ -29,8 +29,8 @@ First, it would be better to interpret the scatter plots from the primary workfl
 The above plot shows how cells with log1p_n_genes_by_count (nFeature_RNA) up to 5.7-5.8 often have high pct_counts_mito. We can set 5.7 as a lower limit when filtering. Let's keep the max value as 20.0. In the tertiary workflow, under the "Filtering by features", the default value is 5.7 for "Min value" and 20.0 for "Max value". You should check your scatter plot and interpret it to obtain a threshold. After filtering, we can look at violin plots comparing the raw data and after applying this filter. 
 
 .. figure:: /images/raw_vs_first_filter.png
-   :width: 400
-   :height: 400
+   :width: 500
+   :height: 300
    :alt: UMAP
    
    Fig 2: Raw data vs the first filter - genes/cell
@@ -47,8 +47,8 @@ Now, we can move to the next metric. Look at the scatter plot under "Plot - mito
 The above plot shows how cells with log1p_total_counts up to 6.3-6.4 often have high pct_counts_mito. We can set 6.3 as a lower limit when filtering. Let's keep the max value as 20.0. In the tertiary workflow, under the "Filtering by Counts," the default value is 6.3 for "Min value" and 20.0 for "Max value." You should check your scatter plot and interpret it to obtain a threshold for your data. After filtering, we can look at violin plots comparing the data after the first filter data and after applying this filter as well.
 
 .. figure:: /images/first_filter_vs_second_filter.png
-   :width: 400
-   :height: 400
+   :width: 500
+   :height: 300
    :alt: UMAP
    
    Fig 4: First filter vs the second filter - counts/cell
@@ -62,11 +62,11 @@ Moving on to the next metric. Look at the scatter plot under "Plot - mito x UMIs
    
    Fig 5: Scatter - mito x UMIs
 
-The above plot shows how cells that have around 5% mitochondrial counts or higher also have fewer total counts. While 5% is quite a common cut-off, this is messy data, so let's go for a more strict cut-off of 4.5%. With your data, look at the scatter plot and obtain a threshold to enter into "Min value" under "Filtering by percentage of mitochondrial counts". You can keep "Max value" as 20.0. After filtering, we can look at violin plots comparing the data after the second filter data and after applying this filter.
+The above plot shows how cells with around 5% mitochondrial counts or higher also have fewer total counts. While 5% is quite a common cut-off, this is messy data, so let's go for a more strict cut-off of 4.5%. With your data, look at the scatter plot and obtain a threshold to enter into "Min value" under "Filtering by percentage of mitochondrial counts". You can keep "Max value" as 20.0. After filtering, we can look at violin plots comparing the data after the second filter data and after applying this filter.
 
 .. figure:: /images/second_filter_vs_third_filter.png
-   :width: 400
-   :height: 400
+   :width: 500
+   :height: 300
    :alt: UMAP
    
    Fig 6: First filter vs the second filter - counts/cell
