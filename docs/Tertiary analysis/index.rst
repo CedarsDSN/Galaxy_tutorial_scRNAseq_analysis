@@ -13,6 +13,7 @@ Below are the steps for the tertiary analysis in our workflow -
 
 .. toctree::
 
+   Filtering data
    Normalize data
    Find variable genes
    Scale data
