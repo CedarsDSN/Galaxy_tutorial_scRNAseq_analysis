@@ -54,7 +54,7 @@ The final plot to generate is the PCA plot
 Your PCA, tSNE, and UMAP plots are ready to be viewed. These plots reduce the dimensionality of your data, and you can peek at different clusters broadly in a lower dimension. PCA plot is not as helpful as UMAP and tSNE plots since the PCA plots, in general, could plot one PC against the other (mostly PC1 vs. PC2), like in Figure 1. UMAP and tSNE plots are most helpful and can provide more insight into the clusters, like their distribution, and also help determine if there is a batch effect. Batch effect is when we see that some samples have more expression of genes compared to some other samples. Let's look at some plots for PCA, tSNE and UMAP dimensioanlity reduction.
 
 .. figure:: /images/PCA_clustering_labeled.png
-   :width: 500
+   :width: 400
    :height: 400
    :alt: Principal components
    
@@ -64,7 +64,7 @@ Since PCA cannot capture the complexity of the data, it would be better to look 
 
 
 .. figure:: /images/tSNE.png
-   :width: 500
+   :width: 400
    :height: 400
    :alt: tSNE
    
@@ -72,7 +72,7 @@ Since PCA cannot capture the complexity of the data, it would be better to look 
 
 
 .. figure:: /images/umap.png
-   :width: 500
+   :width: 400
    :height: 400
    :alt: UMAP
    
