@@ -69,7 +69,7 @@ The above plot shows how cells with around 5% mitochondrial counts or higher als
    :height: 300
    :alt: UMAP
    
-   Fig 6: First filter vs the second filter - counts/cell
+   Fig 6: Second filter vs the third filter - counts/cell
 
 Now that we have gone into detail about how to run the workflow with the filtering for your data. You are now ready to go through the workflow.
 
