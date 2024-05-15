@@ -18,6 +18,7 @@ This tutorial goes through the steps of single-cell RNA-Seq analysis mentioned b
       * Alignment and Quantification of reads
       * Quality control of single-cell results
   - Tertiary analysis
+      * Brief tutorial on filtering data
       * Normalize data
       * Find variable genes
       * Scale data
