@@ -14,7 +14,7 @@ Below are the steps for the tertiary analysis in our workflow -
 .. toctree::
 
    Brief tutorial on filtering data
-   Filtering data
+   Filter data
    Normalize data
    Find variable genes
    Scale data
