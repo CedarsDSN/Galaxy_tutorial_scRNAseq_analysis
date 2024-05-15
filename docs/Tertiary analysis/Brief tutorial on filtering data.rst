@@ -30,7 +30,7 @@ The above plot shows how cells with log1p_n_genes_by_count (nFeature_RNA) up to 
 
 .. figure:: /images/raw_vs_first_filter.png
    :width: 500
-   :height: 300
+   :height: 250
    :alt: UMAP
    
    Fig 2: Raw data vs the first filter - genes/cell
@@ -48,7 +48,7 @@ The above plot shows how cells with log1p_total_counts up to 6.3-6.4 often have 
 
 .. figure:: /images/first_filter_vs_second_filter.png
    :width: 500
-   :height: 300
+   :height: 250
    :alt: UMAP
    
    Fig 4: First filter vs the second filter - counts/cell
@@ -66,7 +66,7 @@ The above plot shows how cells with around 5% mitochondrial counts or higher als
 
 .. figure:: /images/second_filter_vs_third_filter.png
    :width: 500
-   :height: 300
+   :height: 250
    :alt: UMAP
    
    Fig 6: Second filter vs the third filter - counts/cell
