@@ -13,6 +13,7 @@ Below are the steps for the tertiary analysis in our workflow -
 
 .. toctree::
 
+   Importing data/index.rst
    Brief tutorial on filtering data
    Filter data
    Normalize data
