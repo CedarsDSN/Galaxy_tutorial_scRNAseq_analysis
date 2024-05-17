@@ -9,15 +9,15 @@ nFeature_RNA represents the number of unique RNA molecules captured and sequence
 **nCount_RNA (Total Number of Counts)**
 nCount_RNA refers to the total number of RNA transcripts detected in each cell, including all UMI counts. It provides a measure of the overall transcriptional activity within a cell. Similar to nFeature_RNA, cells with extremely low nCount_RNA might be of low quality, while those with excessively high nCount_RNA may be suspect for artifacts like doublets. Filtering based on nCount_RNA helps exclude cells that do not meet the expected levels of transcriptional activity, thus ensuring data quality.
 
-**nMitopercent (Percentage of Mitochondrial Gene Expression)**
-nMitopercent indicates the proportion of total RNA transcripts derived from mitochondrial genes. A high percentage of mitochondrial gene expression can be a sign of cellular stress or apoptosis, as stressed or dying cells often show elevated levels of mitochondrial RNA. By setting a threshold for nMitopercent, cells with unusually high mitochondrial content can be filtered out, improving the overall quality of the dataset.
+**mito.percent** (Percentage of Mitochondrial Gene Expression)**
+mito.percent indicates the proportion of total RNA transcripts derived from mitochondrial genes. A high percentage of mitochondrial gene expression can be a sign of cellular stress or apoptosis, as stressed or dying cells often show elevated levels of mitochondrial RNA. By setting a threshold for mito.percent, cells with unusually high mitochondrial content can be filtered out, improving the overall quality of the dataset.
 
 **Combining Metrics for Effective QC**
 Together, these metrics provide a comprehensive view of cell quality. Researchers can effectively filter out poor-quality cells by analyzing and applying appropriate thresholds for nUMI, nCounts, and nMitopercent, leading to a more reliable and accurate scRNA-seq dataset. Visual tools, such as scatter plots and violin plots, are often used to visualize these metrics and assist in setting appropriate cutoffs for filtering. This rigorous QC process is crucial for ensuring the validity of downstream analyses and obtaining meaningful biological insights.
 
 In our workflow, we can look at the scatter plots from the primary workflow and use that to determine thresholds for the three metrics above. You can open the workflow "Single cell RNA-seq tertiary analysis" and go through this tutorial and change values depending on your data.
 
-First, it would be better to interpret the scatter plots from the primary workflow and then use that to demonstrate what thresholds will be chosen to filter the data. Look at the scatter plot under "Plot - mito x genes". This is plotting the nFeature_RNA against nMitopercent (The notation is a bit different. log1p_n_genes_by_counts is nFeature_RNA and pct_counts_mito is nMitopercent). You can also use a violin plot to determine a threshold, but scatter plots are helpful. Below is an example of such a scatter plot.
+First, it would be better to interpret the scatter plots from the primary workflow and then use that to demonstrate what thresholds will be chosen to filter the data. Look at the scatter plot under "Plot - mito x genes". This is plotting the nFeature_RNA against mito.percent (The notation is a bit different. log1p_n_genes_by_counts is nFeature_RNA and pct_counts_mito is mito.percent). You can also use a violin plot to determine a threshold, but scatter plots are helpful. Below is an example of such a scatter plot.
 
 .. figure:: /images/scatter_mito_genes.png
    :width: 400
@@ -35,7 +35,7 @@ The above plot shows how cells with log1p_n_genes_by_count (nFeature_RNA) up to 
    
    Fig 2: Raw data vs the first filter - genes/cell
 
-Now, we can move to the next metric. Look at the scatter plot under "Plot - mito x UMIs". This is plotting nCount_RNA against nMitopercent (In the plot, nCount_RNA is log1p_total_counts). 
+Now, we can move to the next metric. Look at the scatter plot under "Plot - mito x UMIs". This is plotting nCount_RNA against mito.percent (In the plot, nCount_RNA is log1p_total_counts). 
 
 .. figure:: /images/scatter_mito_UMIs.png
    :width: 400
@@ -53,7 +53,7 @@ The above plot shows how cells with log1p_total_counts up to 6.3-6.4 often have 
    
    Fig 4: First filter vs the second filter - counts/cell
 
-Moving on to the next metric. Look at the scatter plot under "Plot - mito x UMIs". This is plotting nCount_RNA against nMitopercent.
+Moving on to the next metric. Look at the scatter plot under "Plot - mito x UMIs". This is plotting nCount_RNA against mito.percent.
 
 .. figure:: /images/scatter_mito_UMIs.png
    :width: 400
