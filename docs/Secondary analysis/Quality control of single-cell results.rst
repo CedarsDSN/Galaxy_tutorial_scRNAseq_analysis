@@ -38,34 +38,13 @@ Once alignment is done, the tools "DropletUtils", "Scater: Calculate QC metrics"
 
 We have three plots that could help in filtering your single-cell RNA-seq dataset
 
-* Violin plot of total_counts - A violin plot of the distribution of UMIs versus the sample name/condition
+* **Scatter plot of total_counts**: A scatter plot showing the distribution of counts versus the sample name/condition.
 
-* Violin plot of n_genes_by_counts - A violin plot of the distribution of the number of genes versus the sample name/condition 
+* **Scatter plot of n_genes_by_counts**: A scatter plot showing the distribution of the number of genes versus the sample name/condition. 
 
-* Violin plot of pct_counts_mito - A violin plot of the number of genes versus the sample name/condition
+* **Scatter plot of pct_counts_mito**: A scatter plot showing the percentage of mitochondrial gene counts versus the sample name/condition.
 
-To get an idea of how these plots look like, here are the three plots below for some example data -
-
-.. figure:: /images/QC1.png
-   :width: 300
-   :height: 200
-   :alt: QC output
-   
-   The log1p_total_counts versus sample name/condition plot can help decide the threshold for counts/cell
-
-.. figure:: /images/QC2.png
-   :width: 300
-   :height: 200
-   :alt: QC output
-   
-   The log1p_n_genes_by_counts versus sample name/condition plot can help decide the threshold for genes/cell
-
-.. figure:: /images/QC3.png
-   :width: 300
-   :height: 200
-   :alt: QC output
-   
-   The log1p_n_genes_by_counts versus sample name/condition plot can help decide the threshold for the percentage of mitochondrial counts/cell
+To interpret these plots and filter your data using these, please refer to the detailed tutorial `here <https://galaxy-tutorial-scrnaseq-analysisgalaxy-tutorial-scrnaseq-analy.readthedocs.io/en/latest/Tertiary%20analysis/Brief%20tutorial%20on%20filtering%20data.html>`_
 
 
 
